@@ -1,10 +1,19 @@
 ---
 import HeroLogo from "@/components/HeroLogo.astro";
+import '@fontsource/monoton';
 ---
 
 <section class="flex flex-col justify-center items-center">
-    <span class="text-xl uppercase text-secondary bg-primary px-4 py-1 mb-9">
-        Presentación de la 
+    <span class="justify-center items-center flex flex-col text-secondary 
+    px-4 py-1 mb-4"
+    >
+        <h2 class="animate-fade-in animate-delay-300">la</h2>
+        <h1 class="flex lg:text-6xl sm:text-5xl text-3xl animate-fade-in animate-delay-300 uppercase"> Conchinchina</h1>
     </span>
-    <HeroLogo />
+    <span class="text-md uppercase text-secondary bg-primary 
+    px-4 py-2 mb-5
+    animate-fade-in-up animate-delay-500">
+        <h3 class="font-semibold">Grow Shop</h3>
+    </span>
+    <HeroLogo class="text-primary w-auto h-auto animate-fade-in animate-delay-300" />
 </section>

@@ -1,0 +1,42 @@
+<section class="mt-10 mx-auto flex flex-col justify-center items-center text-center text-primary
+border-b-2 pb-10
+animate-fade-in-up animate-delay-500">
+    <h2 class="uppercase text-4xl font-semibold">
+        01 de Junio <span aria-hidden class="hidden md:inline">.</span
+        ><br 
+        aria-hidden class="block md:hidden"
+        />
+        <span><script is:inline>
+            const END_DATE = 1717236000000
+            const d = new Date(END_DATE)
+            const date = d.toLocaleTimeString("es", {
+                hour: "2-digit",
+                minute: "2-digit",
+            })
+            const selfScript = document.currentScript
+            selfScript.parentNode.innerHTML = `${date}`
+        </script>
+        </span>
+    </h2>
+    <h3 class="text-2xl font-medium flex flex-col max-w-sm mt-6">
+        <span>
+            Apertura
+        </span>
+        <span class="mt-1 text-sm">
+            Consigue tu entrada ahora!!
+        </span>
+    </h3>
+
+    <a 
+        class={`
+        border-primary border-2 font-medium uppercase text-lg
+        px-4 py-2 mt-3
+        hover:bg-secondary hover:scale-125
+    `}
+        href="/src/pages/index.astro"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <span class="font-semibold">Entradas agotadas</span>
+    </a>
+</section>

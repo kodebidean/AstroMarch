@@ -1,6 +1,7 @@
 ---
 // Supports weights 100-900
 import '@fontsource-variable/fraunces';
+import '@fontsource/rammetto-one';
 
 interface Props {
 	title: string;
@@ -19,7 +20,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="max-w-6xl px10 pt-40 mx-auto">
+		<div class="max-w-6xl px-2 lg:px10 pt-16 mx-auto">
 			<slot />
 		</div>
 		
@@ -27,8 +28,11 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	html {
-		font-family: 'Fraunces Variable',system-ui, sans-serif;
+		font-family: 'Rammetto One','Fraunces Variable',system-ui, sans-serif;
 		background: #13151a;
+	}
+	h1, h2{
+		font-family: 'monoton','Rammetto One',system-ui, sans-serif;
 	}
 
 </style>
